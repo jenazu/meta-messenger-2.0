@@ -6,3 +6,12 @@ export type Message = {
   profilePic: string;
   email: string;
 };
+
+export type Messages = {
+  id: string;
+  message: string;
+  created_at: number;
+  username: string;
+  profilePic: string;
+  email: string;
+}[]
