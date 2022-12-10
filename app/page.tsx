@@ -7,7 +7,7 @@ import { Providers } from "./providers";
 
 const Homepage = async () => {
   const data = await fetch(
-    `${process.env.VERCEL_URL || "http://localhost:3000"}/api/getMessages`
+    `${process.env.APP_URL || "http://localhost:3000"}/api/getMessages`
   ).then((res) => res.json());
 
   const messages: Messages = data.messages;
